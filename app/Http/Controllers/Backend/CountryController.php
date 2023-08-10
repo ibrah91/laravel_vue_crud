@@ -13,5 +13,11 @@ class CountryController extends Controller
         $countries = Country::all();
         return view ('countries.index', compact('countries'));
     }
+    public function create()
+    {
+       return view('countries.create');
+    }
+    public function store (Request $request, Country $country){
 
+    }
 }
